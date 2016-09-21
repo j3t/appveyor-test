@@ -7,4 +7,5 @@ environment:
     - JAVA_HOME: C:\Program Files\Java (x86)\jdk1.7.0
     
 build_script:
+  - cd c:\projects\appveyor-test
   - bash -lc "bash <(curl -s https://codecov.io/bash)"
