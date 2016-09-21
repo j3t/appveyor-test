@@ -1,0 +1,10 @@
+environment:
+  global:
+    - MSYSTEM: MINGW32
+      PATH: C:\msys64\usr\bin;C:\msys64\mingw32\bin;C:\Windows\System32;C:\Windows;%PATH%
+  matrix:
+    - JAVA_HOME: C:\Program Files\Java (x86)\jdk1.6.0
+    - JAVA_HOME: C:\Program Files\Java (x86)\jdk1.7.0
+    
+build_script:
+  - bash -lc true
