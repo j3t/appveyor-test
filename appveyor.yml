@@ -8,4 +8,4 @@ environment:
     
 build_script:
   - bash -lc true
-  - curl
+  - bash <(curl -s https://codecov.io/bash)
